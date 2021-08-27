@@ -40,9 +40,9 @@ export default function TopCountryPopulation() {
     const dispatch = useDispatch()
 
     useEffect(() => {
-        console.log(all_country)
+        console.log(all_country, page)
         if (all_country) {
-            const top_population = all_country.slice(page * 10, 10);
+            const top_population = all_country.slice(page * 10, page * 10 + 10);
             const promies = top_population.map(async country => {
                 return actionGetCountryPopulation(country);
             })
