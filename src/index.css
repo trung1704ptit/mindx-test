@@ -1,0 +1,36 @@
+@font-face {
+  font-family: SFProText;
+  src: local('SFProText'), url('./assets/fonts/FontsFree-Net-SFProText-Regular.ttf') format('woff');
+}
+
+@font-face {
+  font-family: SFProDisplay;
+  src: local('SFProDisplay'), url('./assets/fonts/FontsFree-Net-SFProDisplay-Regular.ttf') format('woff');
+}
+
+
+body {
+  margin: 0;
+  font-family: SFProText !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #e0e0e0;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #a0a0a0;
+}
